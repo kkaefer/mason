@@ -1,0 +1,28 @@
+addons:
+  apt_packages:
+  - gcc-4.8
+  - g++-4.8
+  - git
+  - build-essential
+  - automake
+  - gdb
+  - libtool
+  - xutils-dev
+  - make
+  - cmake
+  - pkg-config
+  - python-pip
+  - zlib1g-dev
+  - libboost1.55-dev
+  - libcurl4-openssl-dev
+  - libpng-dev
+  - libsqlite3-devmesa-utils
+  - libxi-dev
+  - x11proto-randr-dev
+  - x11proto-xext-dev
+  - libxrandr-dev
+  - x11proto-xf86vidmode-dev
+  - libxxf86vm-dev
+  - libxcursor-dev
+  - libxinerama-dev
+  - llvm-3.4
