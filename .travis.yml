@@ -1,3 +1,5 @@
+sudo: false
+
 addons:
   apt_packages:
   - gcc-4.8
@@ -26,3 +28,4 @@ addons:
   - libxcursor-dev
   - libxinerama-dev
   - llvm-3.4
+
