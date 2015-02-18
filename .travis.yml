@@ -1,5 +1,11 @@
 sudo: false
 
+language: cpp
+
+cache:
+  directories:
+  - ~
+
 addons:
   apt_packages:
   - gcc-4.8
@@ -15,10 +21,10 @@ addons:
   - pkg-config
   - python-pip
   - zlib1g-dev
-  - libboost1.55-dev
   - libcurl4-openssl-dev
   - libpng-dev
-  - libsqlite3-devmesa-utils
+  - libsqlite3-dev
+  - mesa-utils
   - libxi-dev
   - x11proto-randr-dev
   - x11proto-xext-dev
@@ -28,4 +34,8 @@ addons:
   - libxcursor-dev
   - libxinerama-dev
   - llvm-3.4
-
+  - openjdk-7-jre-headless
+  - openjdk-7-jdk
+  - lib32stdc++6
+  - lib32z1
+  - expect
